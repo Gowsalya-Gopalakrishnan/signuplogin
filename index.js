@@ -14,3 +14,17 @@ function signup(username){
 }
 console.log(signup("name1"));
 
+// check the login
+let arr=["admin","Emp@123"];
+function login(username,password){
+    if(username=="admin" && password=="Emp@123")
+        return "Login Sucessfull";
+    else if(username!="admin" && password=="Emp@123")
+        return "User Not Found, Please Signup";
+    else if(username=="admin" && password!="Emp@123")
+        return "Wrong Password....";
+    
+}
+console.log(login("admin","Emp@123"));
+console.log(login("asfsd","Emp@123"));
+console.log(login("admin","E@123"));
